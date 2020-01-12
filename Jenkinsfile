@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test'){
             steps{
-                 sh 'python tests/test.py'
+                 sh 'tox'
             }
 
         }
